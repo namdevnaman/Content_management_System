@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content Management System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <button onclick="executeCommand('justifyLeft')"><span class="icon">&#xf036;</span>Align Left</button>
+      <button onclick="executeCommand('justifyCenter')"><span class="icon">&#xf037;</span>Align Center</button>
+      <button onclick="executeCommand('justifyRight')"><span class="icon">&#xf038;</span>Align Right</button>
+      <button onclick="executeCommand('bold')"><span class="icon">&#xf032;</span>Bold</button>
+      <button onclick="executeCommand('italic')"><span class="icon">&#xf033;</span>Italic</button>
+      <button onclick="executeCommand('underline')"><span class="icon">&#xf0cd;</span>Underline</button>
+      <button onclick="insertImageFromDevice()"><span class="icon">&#xf03e;</span>Insert Image from Device</button>
+      <button onclick="insertVideoFromDevice()"><span class="icon">&#xf03d;</span>Insert Video from Device</button>
+      <button onclick="insertImageFromWeb()"><span class="icon">&#xf03e;</span>Insert Image from Web</button>
+      <button onclick="insertVideoFromWeb()"><span class="icon">&#xf03d;</span>Insert Video from Web</button>
+    </div>
+    <div class="content" contenteditable="true" id="content"></div>
+    <button onclick="saveContentAsDoc()" class="save-btn"><span class="icon"></span>Save as .doc</button>
+
+  </div>
+</body>
+</html>
